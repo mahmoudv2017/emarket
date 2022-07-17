@@ -1,0 +1,33 @@
+.footer_container{
+    background-color: black;
+    position: relative;
+    bottom: 0%;
+    display: flex;
+    grid-gap: 10rem;
+    color: white;
+    justify-content: center;
+    gap: 5rem;
+
+
+    padding: 4.5rem;
+
+    ul{
+        list-style: none;
+        li{
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        gap: .5rem;
+        padding: 0;
+        justify-content: center;
+        img{
+            width: 20px;
+            background-color: white;
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+.home_div{
+    position: relative;
+
+
+        .upper{
+            position: absolute;
+            inset: 0;
+            &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4rem;
+            aspect-ratio: 1/1;
+            background-color: #fff;         
+        }   
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4rem;
+            aspect-ratio: 1/1;
+            transform: translate(100%, 100%);
+            background-color: #fff;
+
+        }
+
+
+        
+    }
+
+
+    .lower{
+        position: absolute;
+        inset: 0;
+
+        &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 4rem;
+        aspect-ratio: 1/1;
+        background-color: #fff;         
+        }   
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 4rem;
+        aspect-ratio: 1/1;
+        transform: translate(-100%, -100%);
+        background-color: #fff;
+
+    }
+
+
+    
+}
+    
+}

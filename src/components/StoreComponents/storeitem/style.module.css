@@ -1,0 +1,11 @@
+
+.cardImg{
+    max-height: 14rem;
+}
+
+.description{
+    overflow-wrap: break-word;
+    font-size: 1.2rem;
+    max-height: 6.5rem;
+    padding: 0.5rem 0;
+}

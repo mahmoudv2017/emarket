@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import React from "react";
+
+import Navbar from "./components/Navbar";
+import Home from './Pages/home/home'
+import About from './Pages/about'
+import Product from './Pages/product/product'
+import Store from './Pages/store/store'
+import Login from './Pages/login/login'
+import { Routes , Route } from 'react-router-dom'
+import CartProvider from './context/cartContext';
+import reduxStore from './context/reduxContext';
+
+import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <Provider store={reduxStore}>
+
+        <Navbar />
+
+        <div className='mx-5 mb-3'>
+          <Routes>
+
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/store' element={<Store />} />
+            <Route path='/product/:id' element={<Product />} />
+
+          </Routes>
+        </div>
+      </Provider>
+      
+     
+    </CartProvider>
+      
+
+      
+  
+    
   );
 }
 

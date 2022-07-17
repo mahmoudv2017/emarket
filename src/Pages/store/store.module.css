@@ -1,0 +1,4 @@
+.store_container{
+    display: grid;
+    grid-template-columns: 24% 76%;
+}

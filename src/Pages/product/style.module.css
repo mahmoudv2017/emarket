@@ -1,0 +1,12 @@
+.product_container{
+    display: grid !important;
+    margin-top: 3rem;
+    grid-template-columns: 50% 50%;
+}
+
+.currency{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px!important;
+    line-height: 24px!important;
+    font-weight: bolder;
+}

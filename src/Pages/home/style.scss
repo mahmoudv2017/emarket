@@ -1,0 +1,113 @@
+$test_color : red;
+
+.my_container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    background-color: #1b1440;
+    font-family: cursive;
+    
+    padding: 2rem;
+
+    
+
+    div{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .first{
+        flex-direction: column;
+        gap: 5rem;
+        z-index: 2;
+        justify-content: flex-start;
+        padding-left: 37%;
+    
+        p{
+            color: white;
+            font-size: 8rem;
+            margin: 0;
+        }
+        button{
+            max-width: max-content;
+            font-size: 2rem;
+        }
+        
+
+    }
+
+    .second{
+        align-items: center;
+       
+        img{
+            width: 800px;
+            aspect-ratio: 1/1;
+        }
+    }
+}
+
+.flex_container{
+    font-size: larger;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-inline: 25%;
+    padding: 7rem;
+    width: 100%;
+
+    h1{
+        font-size: 7rem;
+        font-family: emoji;
+    }
+
+    p{
+        padding-inline: 16%;
+       
+    }
+
+    button{
+        margin-top: 5rem;
+        border-radius: 0;
+        padding: 1rem;
+        font-size: 1rem;
+    }   
+}
+
+.home_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    gap: 3rem;
+    text-align: center;
+
+    padding: 7rem;
+    width: 100%;
+    background-color: #1b1440;
+
+
+
+    img{
+        max-width: 200px;
+    }
+    h3{
+        color: white;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+
+   
+
+}
+
