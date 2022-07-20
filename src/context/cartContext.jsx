@@ -13,7 +13,7 @@ export default function CartProvider({children}){
     // const [storedValue , setstoredValue] = useLocalstorage('cart' , [])
      const [product , setProduct] = useState({product_name : 'loading...'})
     const get_product = async (id) => {
-       const res = await api.get('/products/'+id)
+       const res = await api.get('/products/'+id+'/')
        setProduct(res.data)
     }
 
