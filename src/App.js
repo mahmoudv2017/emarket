@@ -13,6 +13,7 @@ import reduxStore from './context/reduxContext';
 
 import { Provider } from 'react-redux';
 
+
 function App() {
   return (
     <CartProvider>
@@ -20,7 +21,7 @@ function App() {
 
         <Navbar />
 
-        <div className='mx-5 mb-3'>
+        <div className='mx-5 mb-3' style={{height : '85%'}}>
           <Routes>
 
             <Route path='/' element={<Home />} />
